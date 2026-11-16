@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery and Orders - Tacos Tuesday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1 class="logo">Tacos Tuesday</h1>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="Menu.html">Our Menu</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact us.html">Contact Us</a>
+            <a href="Delivery.html" class="order-btn active">Order Now</a>
+        </nav>
+    </header>
+
+    <main class="content-page">
+
+        <section class="page-intro">
+            <p class="small-heading">FRESH FOOD, YOUR WAY</p>
+            <h2>Delivery and Order Now</h2>
+            <p>
+                Order your favourite Mexican food for delivery or collection.
+                Choose from our tacos, burritos, quesadillas and sides.
+            </p>
+            <img src="images\images\Order.png"
+                 alt="Mexican food at Tacos Tuesday">
+        </section>
+
+        <section class="information-section">
+            <h2>How to Order</h2>
+            <p>
+                Choose your food from the menu, enter your details,
+                select your quantity and choose delivery or collection.
+            </p>
+            
+            <ol>
+                <li> Choose your food from the meun.</li>
+                <li> Enter your details in the order form.</li>
+                <li> Select your quantily.</li>
+                <li> Click the place order.</li>
+            </ol>
+            
+            <a href="Menu.html" class="menu-btn">View Our Menu</a>
+        </section>
+            <h2> Our Food options</h2>
+            <ul>
+                <li>Burritos</li>  
+                <li>Tacos</li>  
+                <li>Quesadillas</li>  
+                <li>Sides and Desserts</li>  
+            </ul>
+        <section class="form-section">
+            <h2>Place Your Order</h2>
+            <p>Complete the form below with your order details.</p>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="order-name">Full Name</label>
+                    <input type="text" id="order-name" name="name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="order-phone">Phone Number</label>
+                    <input type="tel" id="order-phone" name="phone"
+                           placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="order-address">Delivery Address</label>
+                    <textarea id="order-address" name="address"
+                              rows="3"
+                              placeholder="Enter your address if you need delivery"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="order-food">Choose Your Food</label>
+                    <select id="order-food" name="food" required>
+                        <option value="">Select your food</option>
+                        <option value="Steak Taco">Steak Taco</option>
+                        <option value="Fish Taco">Fish Taco</option>
+                        <option value="Prawn Taco">Prawn Taco</option>
+                        <option value="Mushroom Taco">Mushroom Taco</option>
+                        <option value="Pumpkin Taco">Pumpkin Taco</option>
+                        <option value="Chicken Burrito">Chicken Burrito</option>
+                        <option value="Aubergine Burrito">Aubergine Burrito</option>
+                        <option value="Chicken Quesadilla">Chicken Quesadilla</option>
+                        <option value="Cheese Quesadilla">Cheese Quesadilla</option>
+                        <option value="Chicken Wings">Chicken Wings</option>
+                        <option value="Churros">Churros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="order-quantity">Quantity</label>
+                    <input type="number" id="order-quantity" name="quantity"
+                           min="1" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="order-type">Delivery or Collection</label>
+                    <select id="order-type" name="order-type" required>
+                        <option value="">Choose an option</option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Collection">Collection</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="order-notes">Additional Information</label>
+                    <textarea id="order-notes" name="notes" rows="4"
+                              placeholder="Add any special requests"></textarea>
+                </div>
+
+                <button type="submit" class="form-button">Place Order</button>
+
+            </form>
+
+            <p class="form-note">
+                This form is a website demonstration. Orders will not be
+                sent to the restaurant until a form-processing service is connected.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> 2026 Tacos Tuesday. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
